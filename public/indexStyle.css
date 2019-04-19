@@ -82,3 +82,9 @@
 #Hresim4{
     display: none;
 }
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(./images/cool-background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
