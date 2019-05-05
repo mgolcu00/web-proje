@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../public/indexStyle.css" type="text/css" rel="stylesheet"/>
-        <script src="../public/app.js"> </script>
+        <link href="../public/css/indexStyle.css" type="text/css" rel="stylesheet"/>
+        <script src="../public/js/app.js"> </script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <meta charset="utf-8">
@@ -29,48 +29,73 @@
                           <a class="nav-link" href="city.html">Şehrim</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="city.html">ÖzGeçmiş</a>
+                          <a class="nav-link" href="city.html">Eğitim</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="city.html">Mirasimiz</a>
+                          <a class="nav-link" href="cv.html">Mirasimiz</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
+                          </li>
                       </ul>
                     </div>
                   </nav>
 
+                  <div class="container">
+                      <div class="row">
+                        <div class="col">
+                            <div class="bolum1">
+                                <h1 class="baslik">Merhaba</h1> <hr>
+                              <article id="makale1">
+                                Ben Mert Gölcü , 2000 yılında Türkiyenin Kahramanmaraş ilinde dünyaya geldim.5 çocuklu bir ailenin en son çocuğuyum kardeşlerimin hepsi evli ve Türkiyenin
+                                farklı şehirlerinde yaşıyorlar.
+                                18 yıl Kahramanmaraşta ikamet ettikten sonra,
+                                2018 yılında Sakarya Üniversitesinde Bilgisayar Mühendisliği bölümüne başladım ve Sakarya'ya taşındım.
 
-                  <div class="bodyA" id="body">
-                    <div id="bolum1">
-                      <h1 class="baslik">Merhaba</h1>
-                    <article id="makale1">
-                      Ben Mert Gölcü , 2000 yılında Türkiyenin Kahramanmaraş ilinde dünyaya geldim.
-                      2018 yılında Sakarya Üniversitesinde Bilgisayar Mühendisliği bölümüne başladım.
-                    </article>
-                    </div>
+                              </article>
+                              </div>
+                        </div>
+                      </div>
+                      <br><br>
+                      <div class="row">
+                        <div class="col">
                     <div id="bolum2">
-                      <h2 class="baslik">Hobilerim</h2>
+                        <h2 class="baslik">Hobilerim</h2>
                       <li>
-                          <a class="linkler" href="#" onmouseover="ResimGoster('Hresim1')" onmouseout="ResimGizle('Hresim1')" >Bilgisayar Oyunları</a>
-                      </li>
+                          <a class="linkler" href="https://store.steampowered.com/?l=turkish"  >Bilgisayar Oyunları</a>
+                      </li><br>
                       <li>
-                          <a class="linkler" href="#" onmouseover="ResimGoster('Hresim2')" onmouseout="ResimGizle('Hresim2')">Kitap Okumak</a>
-                      </li>
+                          <a class="linkler" href="https://www.dr.com.tr/" >Kitap Okumak</a>
+                      </li><br>
                       <li>
-                          <a class="linkler" href="#" onmouseover="ResimGoster('Hresim3')" onmouseout="ResimGizle('Hresim3')">Seyehat Etmek</a>
-                      </li>
+                          <a class="linkler" href="https://www.etstur.com">Seyehat Etmek</a>
+                      </li><br>
                       <li>
-                          <a class="linkler" href="#" onmouseover="ResimGoster('Hresim4')" onmouseout="ResimGizle('Hresim4')">Yeni Tatlar Keşfetmek</a>
+                          <a class="linkler" href="https://www.yemeksepeti.com">Yeni Tatlar Keşfetmek</a>
                       </li>
                     </div>
-                    <div id="bolum3">
-                      <img class="resim" id="Hresim1" src="../public/images/Games-photo.jpg" alt="Bilgisayar Oyunları">
-                      <img class="resim" id="Hresim2" src="../public/images/Reading-photo.jpg" alt="Kitap Okumak">
-                      <img class="resim" id="Hresim3" src="../public/images/Trav-photo.jpeg" alt="Seyehat Etmek">
-                      <img class="resim" id="Hresim4" src="../public/images/yemek-phptp.jpg" alt="Yeni Tatlar">
+                        </div>
+                        <div class="col">
+
+                          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"  id="MyCarousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="d-block w-100" src="../public/images/Games-photo.jpg" alt="Oyunlar">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="../public/images/Reading-photo.jpg" alt="Okumak">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="../public/images/Trav-photo.jpeg" alt="Gezmek">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../public/images/yemek-phptp.jpg" alt="Yemek">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
                       </div>
                   </div>
-                  <div id="body1" style="display: none" >deneme body1</div>
-                  <div id="body2" style="display: none" >DENEME BODY2 </div>
                   
     </body>
 </html>

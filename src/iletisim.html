@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../public/css/contactStyle.css" type="text/css" rel="stylesheet"/>
+    <title>Iletisim</title>
+    <script src="../public/js/app.js"> </script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="./index.html">Mert Gölcü</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">AnaSayfa<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="city.html">Şehrim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">Eğitim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="legacy.html">Mirasimiz</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container">
+          
+    <h1 class="h1">İletişim</h1><hr>
+
+
+
+
+
+
+
+
+
+
+    <form action="./city.html" id="form" onsubmit=" return Kontrol(this)" method="GET">
+      <div class="row">
+          <div class="col">
+            <input type="text" name="firstname" class="form-control" placeholder="Adınız">
+          </div>
+          <div class="col">
+            <input type="text" name="lastname" class="form-control" placeholder="Soyadınız">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              Cinsiyet : <input type="radio" name="gender" value="Erkek">Erkek <input type="radio" name="gender" value="Kadın" >Kadın <input type="radio" name="gender" value="Diger" >Diğer 
+          </div>
+          <div class="col">
+              Yaşınız : <input type="number" name="yas" min="1" max="100"> 
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <select name="tip">
+                    <option value="Ev">Ev</option>
+                    <option value="Is">İş</option>
+                    <option value="Cep">Cep</option>
+                  </select>    
+                   <input type="tel" name="tel" onkeypress='return event.keyCode >= 48 && event.keyCode <= 57 || event.keyCode == 45' maxlength="12" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div class="col">
+                <input type="email" name="email" id="email" placeholder="E-Mailiniz"> 
+            </div>
+          </div>
+    Kulandığın sosyal medya hesapları : <br>
+    <input type="checkbox" name="insta" value="instagram" > İnstagram 
+    <input type="checkbox" name="face" value="facebook"> Facebook 
+    <input type="checkbox" name="twt" value="twitter"> Twitter 
+    <br>
+    <textarea name="messeage" id="mesaj" cols="20" rows="10" placeholder="Bana Mesaj Bırakın :)"></textarea>
+    <br>
+    <input type="submit" name="submit" id="submit">
+    <input type="reset" name="temizle" id="temizle">
+
+    </form>
+    
+        </div>
+    
+    
+</body>
+</html>

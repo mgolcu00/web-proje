@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous'); /*     font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre'); /* font-family: 'Miriam Libre', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Orbitron'); /*  font-family: 'Cuprum', sans-serif;  font-family: 'Orbitron', sans-serif; */
+
+
+
+.baslik{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+.linkler{
+    font-family: 'Righteous',cursive;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 22px;
+}
+
+
+#makale1{
+    font-family: 'Righteous',cursive;
+    font-size: 18px;
+}
+.resim{
+    width: 420px;
+    height: 140px;
+    /* border-radius: 20px; */
+}
+#Hresim1{
+    display: none;
+}
+#Hresim2{
+    display: none;
+}
+#Hresim3{
+    display: none;
+}
+#Hresim4{
+    display: none;
+}

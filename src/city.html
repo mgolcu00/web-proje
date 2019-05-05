@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../public/cityStyle.css" type="text/css" rel="stylesheet"/>
-        <script src="../public/app.js"> </script>
+        <link href="../public/css/cityStyle.css" type="text/css" rel="stylesheet"/>
+        <script src="../public/js/app.js"> </script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <title>Şehrim</title>
     </head>
     <body class="cityBody">
@@ -27,18 +23,21 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">AnaSayfa<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="city.html">Şehrim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="city.html">ÖzGeçmiş</a>
+            <a class="nav-link" href="cv.html">Eğitim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="city.html">Mirasimiz</a>
+            <a class="nav-link" href="legacy.html">Mirasimiz</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
         </ul>
       </div>
     </nav>
@@ -47,41 +46,78 @@
             <h1 id="header">KAHRAMANMARAŞ</h1> 
         </div>
         <div class="container">
-          <h2>Carousel Example</h2>  
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
-        
-            <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-item active">
+                <a href="#kale"><img class="d-block w-100" src="../public/images/kale.jpg" alt="Kahramanmaraş Kalesi"></a>
               </div>
-        
-              <div class="item">
-                <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+              <div class="carousel-item">
+                <a href="#bna"><img class="d-block w-100" src="../public/images/desb.jpg" alt="Dünyanın en saçma binası"></a>
               </div>
-            
-              <div class="item">
-                <img src="ny.jpg" alt="New york" style="width:100%;">
+              <div class="carousel-item">
+               <a href="#bbr"> <img class="d-block w-100" src="../public/images/biber.jpeg" alt="Kahramanmaraş Biberi"></a>
               </div>
+              <div class="carousel-item">
+                  <a href="#dnd"><img class="d-block w-100" src="../public/images/dondurma.jpg" alt="Kahramanmaraş Dondurması"></a>
+                </div>
             </div>
-        
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Önceki</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Sonraki</span>
             </a>
           </div>
+
+
+          <div class="yazi">
+              <h1>Kahramanmaraş</h1>
+              <p>Kahramanmaraş, eski ve halk arasındaki adıyla Maraş, Türkiye'nin bir ili ve en kalabalık on sekizinci şehri.
+                 2016 itibarıyla 1.112.634 nüfusa sahiptir. 
+                 Kurtuluş Savaşı'nda işgale direnişi nedeniyle TBMM tarafından 5 Nisan 1925'te şehre İstiklal Madalyası verildi.
+                </p>
+          </div>
+          <div class="cografya">
+            <h1 id="cgrfy">Coğrafyası</h1><hr>
+            <p>Kahramanmaraş Coğrafik olarak 3/4 ü dağlarla kaplı, Büyük Çoğunluğu Akdeniz bitki örtüsüne sahiptir. Akdeniz İkliminin yanı sıra Güneydoğu Anadolu iklimi(Pazarcık İlçesi) Doğu Anadolu Karasal İklimi(Elbistan ve Afşin İlçesi) Akdeniz Yayla İklimi(Andırın ve Göksun İlçesi) görülmekte bu kadar farklı iklimlerin bir arada olması bitki çeşitliliğini de beraberinde getirmektedir. Tabi ve bozulmamış bir coğrafya sahip olan Kahramanmaraş'ın Karadeniz Bölgesini aratmayacak güzellikte birçok yaylası mevcuttur.</p>
+          </div>
+          <div class="biber" >
+            <h1 id="bbr">Kahramanmaraş Biberi</h1>
+            <hr>
+            <p>Şehrimiz ve ülkemiz açısından Kahramanmaraş, Kırmızı Biberinin özel bir yeri vardır. Kahramanmaraş ekonomisinde çeltik ve pamuk üretiminin önemli olduğu yıllarda Kırmızı Biber de çok önemli bir konumda idi. Günümüzde çeltik, tarımı yapılmaz oldu. Pamuk üretim alanları daraldı. Artık tek biberimiz kaldı. Kahramanmaraşlılar olarak Kırmızı Biberi önemseyip, gerekli önlemleri almalıyız. Her aşamada kaliteyi yakalayıp iyi ürün elde etmek için iyi tohum, toprak hazırlığı, ekim-dikim, sulama, gübreleme, ıslah çalışmaları ile yüksek kaliteli ürün elde etmeliyiz.</p>
+          </div>
+          <div class="kale">
+            <h1 id="kale">Kahramanmaraş Kalesi</h1>
+            <hr>
+            <p>
+                Kentin merkezinde bulunan kalenin kesin inşa tarihi bilinmemektedir; fakat Geç Hitit Dönemlerinde(M.Ö. IX. yüzyıl) inşa edildiği düşünülür. Kale, kentin merkezinde çevresine hâkim bir tepede, stratejik bir noktada oluşu ayrıca önemlidir. Kuzey-güney doğrultuda yaklaşık 83x140 m ölçülerindeki yapı, moloz taş ve kesme taş malzeme kullanılarak inşa edilmiştir. Özellikle 7-8. yüzyıllar da Bizanslılar ve Müslüman devletler arasında sık sık el değiştirdiği için kale defalarca tahrip olmuş onarım görmüştür. Bu noktada esaslı bir onarımın Osmanlı Padişahı Kanuni Sultan Süleyman(1520-1566) tarafından yaptırılmıştır. Ünlü seyyah Evliya Çelebi 1642-1672 yıllarında şehrimize gelmiş ve Maraş kalesinden bahsederken burada 1 camii bulunan 100 haneli bir mahalleden bahsetmesi kale alanın önemini gösterir bir bilgidir. Yapının son durumu 1960-1970 yıllarına aittir. Bu noktada hali hazırda tarihi kültürel değeri yanında, duruşu, özellikleri ve şehri kuşatan tarifsiz panoramasıyla ziyaretçilerine ayrı bir keyif sunmaktadır.
+            </p>
+          </div>
+          <div class="bina">
+            <h1 id="bna">Dünyanın en saçma binası</h1><hr>
+            <p>
+                Google’da ‘dünyanın en saçma binası’ olarak arama yapıldığında ilk sırada yer alan Kahramanmaraş’taki yarısı kullanılmayan sarı kırmızı mavi renkli bina, yüksek maliyet nedeniyle yıkılmadığı için kentin silüetini de bozmaya devam ediyor.
+                Kahramanmaraş’ta iş merkezi olarak yapılan 19 katlı bina, arama motoru Google’da ‘dünyanın en saçma binası’ olarak arandığı zaman 290 bin sonuç arasında ilk sırada yer alıyor. Dulkadiroğlu ilçesi İsmetpaşa Mahallesi Trabzon Bulvarı üzerinde 1994 yılında hizmete giren bina, 2 bin 110 metrekare alana kurulu sarı, mavi ve kırmızı renklerle kentin hemen hemen her yerinden görünüyor.
+            </p>
+          </div>
+          <div class="dondurma">
+            <h1 id="dnd">Kahramanmaraş Dondurması</h1>
+            <hr>
+            <p>
+                Kahramanmaraş dondurması, Ahir Dağı ve Maraş Dondurma ustalarının bir mucizesidir. Ahir Dağının yüksek yamaçlarında Maraş Coğrafyasına özgü kekik, keven,sümbül ve çiğdem gibi çiçeklerle beslenen keçilerin eşsiz kıvam ve aromaya sahip sütleri ve Ahir Dağının topraklarından baharla beraber yeşeren yabani orkide çiçeklerinin yumru köklerinden elde edilen Salep’in Dondurma ustalarının mahir ellerinde benzersiz bir lezzete ulaşarak Türkiye’de tek, Dünyada marka olmuştur.
+            </p>
+          </div>
+
         </div>
-        
+
+
     </body>
 </html>
